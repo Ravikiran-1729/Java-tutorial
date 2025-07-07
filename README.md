@@ -1,5 +1,20 @@
-# Welcome to GitHub Desktop!
+This repository contains Java code samples and mini-projects I've written while learning and practicing core Java programming concepts. It covers a variety of topics including:
 
-This is your README. READMEs are where you can communicate what your project is and how to use it.
+✅ Basic Syntax and Structure
 
-Write your name on line 6, save it, and then head back to GitHub Desktop.
+🔁 Control Statements (if, else, switch, loops)
+
+🧮 Bitwise Operators
+
+🔢 Arrays and 2D Arrays
+
+🔍 Searching Algorithms (Linear Search)
+
+🔃 Sorting Algorithms (Bubble Sort, Insertion Sort, Selection Sort)
+
+🔢 Number Programs (Prime, Fibonacci, GCD)
+
+📐 Pattern and Area Calculations
+
+🔤 String Manipulations
+
