@@ -18,3 +18,14 @@ This repository contains Java code samples and mini-projects I've written while 
 
 🔤 String Manipulations
 
+To document my learning process, understand Java more deeply through hands-on coding, and build a solid foundation for future projects like:
+
+Object-Oriented Programming
+
+File Handling
+
+Data Structures (Stacks, Queues, Linked Lists)
+
+GUI-based Applications
+
+Backend Projects using JDBC & MySQL
