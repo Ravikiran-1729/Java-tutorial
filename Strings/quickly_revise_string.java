@@ -9,7 +9,7 @@ public class quickly_revise_string {
         System.out.println(s.charAt(4)); // 'l'
 
         // 3. substring(int beginIndex, int endIndex) - substring from index to end
-        System.out.println(s.substring(7, 8)); // "Java World! "
+        System.out.println(s.substring(7, 8)); // "J"
 
         // 4. substring(int begin, int end) - substring between indexes
         System.out.println(s.substring(7, 11)); // "Java"

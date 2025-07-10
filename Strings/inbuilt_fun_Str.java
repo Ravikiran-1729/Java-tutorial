@@ -56,7 +56,9 @@ public class inbuilt_fun_Str {
     // Format :- "String_name1 + String_name2"
     public static void concanate(String name, String subname){
         String Fullname = name + subname;
+        String FullName = name.concat(subname);
         System.out.println(Fullname);
+        System.out.println(FullName);
     }
 
 
