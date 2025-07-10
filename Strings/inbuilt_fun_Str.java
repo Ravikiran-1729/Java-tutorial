@@ -13,6 +13,7 @@ public class inbuilt_fun_Str {
 
 
         concanate(name, subname);
+        Substring(name);
 
 
         System.out.print("Enter index to search charAt :- ");
@@ -38,7 +39,7 @@ public class inbuilt_fun_Str {
             System.err.println("Index out of bound");
             return;
         }
-        System.out.println(name.charAt(index));
+        System.out.println("Char At "+index+" in "+name+" is :- "+name.charAt(index));
     }
 
 
@@ -49,9 +50,14 @@ public class inbuilt_fun_Str {
         if (name1.compareTo(name2)==0){
             System.out.println("Strings are Equal");
         }else if (name1.compareTo(name2)>0){
-            System.out.println("First String larger than Second");
+            System.out.println("First String larger than Second i.e "+ name1+"> "+name2);
         }else{
-            System.out.println("Second String larger than First");
+            System.out.println("Second String larger than Firsti.e "+ name2+"> "+name1);
         }
+    }
+
+    public static void Substring(String name){
+        String subStr = name.substring(0,2);
+        System.out.println("Substring is :- " + subStr);
     }
 }
