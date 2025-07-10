@@ -1,3 +1,10 @@
+// You can create a string using:
+// 1. "String s = "Hello";"               // String literal  
+// 2. "String s2 = new String("Hello");"  // Using constructor
+
+
+
+
 import java.util.Scanner;
 
 public class input_str{
