@@ -1,8 +1,10 @@
-package Recursion;
+import java.util.Scanner;
 
 public class factorial {
     public static void main(String[] args) {
-        int fact = factorial(5);
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a digit :- ");
+        int fact = factorial(sc.nextInt());
         System.out.println(fact);
     }
     
