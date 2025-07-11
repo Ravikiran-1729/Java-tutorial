@@ -23,12 +23,11 @@ public class PowerCalc_StackHeight_Logn {
         if (x == 0) return 0;
         if (n == 0) return 1;
         if (n == 1) return x;
+
         if(n % 2 == 0){
-            int halfPower = calculatePower(x, n/2);
-            return halfPower * halfPower;
+            return calculatePower(x, n/2) * calculatePower(x, n/2);
         }else{
-            int halfPower = calculatePower(x, n/2);
-            return x * halfPower * halfPower;
+            return x * calculatePower(x, n/2)*calculatePower(x, n/2);
         }
     }
 }
