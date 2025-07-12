@@ -5,6 +5,8 @@ public class TowerOfHanoi {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.print("Enter Disk Number :- ");
+
         int n = sc.nextInt();
         int steps = TowerOfHanoi(n, "S", "D", "H");
         System.out.println();
