@@ -1,4 +1,4 @@
-package Intermidiate_Recursion;
+
 import java.util.Scanner;
 
 public class TowerOfHanoi {
