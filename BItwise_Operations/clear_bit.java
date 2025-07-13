@@ -13,5 +13,7 @@ public class clear_bit {
         int newnumber = (~ bitmask) & n;
 
         System.out.println(newnumber);
+        
+        sc.close();
     }
 }

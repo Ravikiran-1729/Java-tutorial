@@ -4,7 +4,6 @@
 
 
 
-
 import java.util.Scanner;
 
 public class input_str{
@@ -15,5 +14,7 @@ public class input_str{
         
         String name = sc.nextLine();
         System.out.println("Your name is "+name);
+        
+        sc.close();
     }
 }

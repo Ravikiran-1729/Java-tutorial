@@ -17,6 +17,8 @@ public class update_bit {
             int newnumber1 = gbitmask | n;
             System.out.println("New number after updating bit is :- " + newnumber1);
         }
+        
+        sc.close();
     }
 }
 

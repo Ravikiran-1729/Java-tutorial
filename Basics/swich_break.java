@@ -93,5 +93,8 @@ public class swich_break
             default: System.out.println("Invalid Month");
             break;
         }
+
+        
+        sc.close();
     }
 }

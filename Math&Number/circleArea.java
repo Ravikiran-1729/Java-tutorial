@@ -17,7 +17,7 @@ public class circleArea {
         System.out.println(Circumstance);
         System.out.println(halfarea);
 
-        
+        sc.close();
     }
     
 }

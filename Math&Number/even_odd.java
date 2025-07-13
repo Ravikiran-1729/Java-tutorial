@@ -20,6 +20,8 @@ public class even_odd {
         }else{
             System.out.println("Odd");
         }
+        
+        sc.close();
     }
 }
 

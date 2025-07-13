@@ -6,7 +6,7 @@ public class get_bit {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter a position :- ");
+        System.out.print("Enter a position :- ");
         int pos = sc.nextInt();
 
         int bitmask = 1 << pos;
@@ -20,5 +20,7 @@ public class get_bit {
         }else{
             System.out.println("Zero");
         }
+
+        sc.close();
     }
 }

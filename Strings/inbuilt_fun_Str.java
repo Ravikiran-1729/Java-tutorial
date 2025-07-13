@@ -1,20 +1,12 @@
-
-
 // ALWAYS REMEMBER : Java Strings are Immutable.
 // 1. Once a String object is created, its value cannot be changed.
 // 2. Any operation that seems to modify a string actually creates a new string object.
-// 
-// 
-// 
-// 
 
 
 
-
-import java.nio.channels.ScatteringByteChannel;
 import java.util.Scanner;
 
-import javax.print.DocFlavor.STRING;
+
 
 public class inbuilt_fun_Str {
     
@@ -49,6 +41,8 @@ public class inbuilt_fun_Str {
         int number = 1729;
         String no_2_String = Tostring(number);
         System.out.println(number + " is (Int) converted into String " + no_2_String);
+
+        sc.close();
     }
 
 
@@ -62,6 +56,7 @@ public class inbuilt_fun_Str {
     }
 
 
+
     // Gives Character at Index of String
     // Format :- "String_name.charAt(index)"
     public static void charAtIndex(String name, int index){
@@ -71,6 +66,7 @@ public class inbuilt_fun_Str {
         }
         System.out.println("Char At "+index+" in "+name+" is :- "+name.charAt(index));
     }
+
 
 
     //Compares two strings lexicographically.
@@ -89,6 +85,8 @@ public class inbuilt_fun_Str {
         }
     }
 
+
+
     // Gives Substring from main string.
     // Format  "Sting_name.substring(beginIndex, endIndex);""
     public static void Substring(String name){
@@ -96,12 +94,16 @@ public class inbuilt_fun_Str {
         System.out.println("Substring is :- " + subStr);
     }
 
+
+
     // Convert String (primitive data type) to Int
     // Format "Integer.parseInt(str_name);"
     public static int parseInt(String str){
         return Integer.parseInt(str);
     }
-    
+
+
+
     // Convert Int (primitive data type) to String
     // Format "Integer.toString(int_name);"
     public static String Tostring(int number){

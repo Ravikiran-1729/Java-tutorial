@@ -23,8 +23,12 @@ public class fibonacci_series {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        
+        System.out.print("Enter n th index number :- ");
         int a = sc.nextInt();
+        System.out.print("Fibonacci Series is :- ");
         fibo(a);
+
+        sc.close();
     }
 }

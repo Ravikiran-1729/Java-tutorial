@@ -5,6 +5,7 @@ public class circleArea {
     {
         //Input
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Radius:- ");
         int Radius = sc.nextInt();
         int Diameter = 2 * Radius;
         double Area = Math.PI * Math.pow(Radius, 2);
@@ -16,6 +17,8 @@ public class circleArea {
         System.out.println(Area);
         System.out.println(Circumstance);
         System.out.println(halfarea);
+
+        sc.close();
 
         
     }

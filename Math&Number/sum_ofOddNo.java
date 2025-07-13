@@ -1,7 +1,19 @@
 import java.util.Scanner;
 
 public class sum_ofOddNo {
-    public static int sum_ofOddNo(int a){
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+
+        System.out.println(sumOddNo(a));
+
+        sc.close();
+    }
+
+
+
+    public static int sumOddNo(int a){
         int sum = 0;
         int n;
         if(a%2==0){
@@ -13,12 +25,5 @@ public class sum_ofOddNo {
             sum+=i;
         }
         return sum;
-    }
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        int a = sc.nextInt();
-
-        System.out.println(sum_ofOddNo(a));
     }
 }

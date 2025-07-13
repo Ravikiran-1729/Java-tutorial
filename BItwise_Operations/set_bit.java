@@ -18,7 +18,8 @@ public class set_bit {
         System.out.println("bitmask | n is :- "+a+ " .........Where | is bitwise operator and || is logical operator");
         System.out.println(n+" is original number and number after setting bit is "+a);
         System.out.println(a + " is new number in which at " +pos+" position bit is set. means get changed by 1");
-
+        
+        sc.close();
         
     }
 }

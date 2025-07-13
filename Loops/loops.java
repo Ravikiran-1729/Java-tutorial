@@ -32,5 +32,7 @@ public class loops {
             System.out.print(i+" ");
             i++;              //updater
         } while (i < n);     //condition
+
+        sc.close();
     }
 }

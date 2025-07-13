@@ -1,8 +1,16 @@
-import java.util.*;
+import java.util.Scanner;
+
 public class SB_declaration {
     public static void main(String[] args) {
-        StringBuilder sb2 = new StringBuilder("HELLo");
+        Scanner sc = new Scanner(System.in);
 
-        System.out.println(sb2);
+        StringBuilder sb = new StringBuilder("HELLo");
+        System.out.println("Default StringBuilder is "+sb);
+
+
+        StringBuilder sb1 = new StringBuilder(sc.nextLine());
+        System.out.println("User Entered StringBuilder is "+sb1);
+
+        sc.close();
     }
 }

@@ -8,15 +8,17 @@ public class print_no {
         System.out.print("Enter a number:- ");
         int n = sc.nextInt();
 
-        print_no(n, 0);
+        printNo(n, 0);
+
+        sc.close();
     }
 
-    public static void print_no(int n, int i){
+    public static void printNo(int n, int i){
         if(i == n){
             System.out.print(n);
             return;
         }
         System.out.print(i+"  ");
-        print_no(n, i+1);
+        printNo(n, i+1);
     }
 }

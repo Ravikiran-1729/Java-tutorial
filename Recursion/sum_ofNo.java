@@ -7,16 +7,20 @@ public class sum_ofNo {
         System.out.print("Enter a number:- ");
         int n = sc.nextInt();
 
-        int sum = sum_ofNo(n);
+        int sum = calcSum(n);
         System.out.println("Sum of "+n+" Natural number is "+sum);
+
+        sc.close();
 
     }
 
-    public static int sum_ofNo(int n){
+
+
+    public static int calcSum(int n){
         if(n==0){
             return 0;
         }
-        return n + sum_ofNo(n-1);
+        return n + calcSum(n-1);
     
     }
 }
