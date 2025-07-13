@@ -12,11 +12,7 @@ public class removeDuplicatesFromString {
 
         removeDuplicateChar(str, 0);
         sc.close();
-    }
-
-
-
-    public static void removeDuplicateChar(String str, int idx){
+    }    public static void removeDuplicateChar(String str, int idx){
         if(idx == str.length()){
             System.out.println("Unique String is :- "+ newstr);
             return;
