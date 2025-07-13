@@ -1,19 +1,20 @@
-// |---------------|----------------------------------------------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-// | Concept       | Explanation                                        | Declaration                                    | Return                                                                                                     |
-// | ------------- | -------------------------------------------------- | ---------------------------------------------- | -----------------------------------------------------------------------------------------------------------|
-// | HashSet       | Stores unique elements, no order                   | HashSet<Type> setName = new HashSet<>()        | Create a New Hashset with name 'setName'                                                                   |
-// | Iterator      | Used to loop over collection without index         | Iterator<Type> ItrName = setName.iterator()    | Create a New Iterator obn with name 'ItrName'                                                              | 
-// | .add()        | Adds element if not already present                | setName.add(E e)                               | Adds element if not already present                                                                        |   
-// | .remove()     | Removes the element                                | setName.remove(Object o)                       | Removes the element                                                                                        |
-// | .size()       | Returns number of elements                         | setName.size()                                 | Returns number of elements                                                                                 | 
-// | .contains()   | Checks if element exists                           | setName.contains(Object o)                     | Return `true` if element exists                                                                            |
-// | .isEmpty()    | Returns true if set is empty                       | setName.isEmpty()                              | Return `true` if set is empty                                                                              |
-// | .iterator()   | Returns an iterator                                | setName.iterator()                             | Return an iterator (need to store in Itertor object like Iterator<type> ItrName = setName.iterator())      |    
-// | .clear()      | Removes all elements                               | setName.clear()                                | Remove all Element in set                                         |                                        |
-// | .hasNext()    | Checks if another element exists                   | ItrName.hasNext()                              | Return `true` if another element Exist                                                                     |
-// | .next()       | Returns next element                               | ItrName.next()                                 | Return next element in HashSet (in collection of items/elements)                                           |
-// | .remove()     | Safely removes current element during iteration    | ItrName.remove()                               | Remove the current element in HashSet (in Collection of items/elements)                                    |
-// |---------------|----------------------------------------------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+// |------------------|----------------------------------------------------|---------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+// | Concept          | Explanation                                        | Declaration                                       | Return                                                                                                     |
+// |------------------| -------------------------------------------------- | --------------------------------------------------| -----------------------------------------------------------------------------------------------------------|
+// | HashSet          | Stores unique elements, no order                   | HashSet<Type> setName = new HashSet<>()           | Create a New Hashset with name 'setName'                                                                   |
+// | Iterator         | Used to loop over collection without index         | Iterator<Type> ItrName = setName.iterator()       | Create a New Iterator obn with name 'ItrName'                                                              | 
+// | .add()           | Adds element if not already present                | setName.add(E e)                                  | Adds element if not already present                                                                        |   
+// | .remove()        | Removes the element                                | setName.remove(Object o)                          | Removes the element                                                                                        |
+// | syso(SetName)    | Print set as default                               | System.out.println(setName)                       | Print Set like `[element1, element2, element3......]`                                                      |
+// | .size()          | Returns number of elements                         | setName.size()                                    | Returns number of elements                                                                                 | 
+// | .contains()      | Checks if element exists                           | setName.contains(Object o)                        | Return `true` if element exists                                                                            |
+// | .isEmpty()       | Returns true if set is empty                       | setName.isEmpty()                                 | Return `true` if set is empty                                                                              |
+// | .iterator()      | Returns an iterator                                | setName.iterator()                                | Return an iterator (need to store in Itertor object like Iterator<type> ItrName = setName.iterator())      |    
+// | .clear()         | Removes all elements                               | setName.clear()                                   | Remove all Element in set                                         |                                        |
+// | .hasNext()       | Checks if another element exists                   | ItrName.hasNext()                                 | Return `true` if another element Exist                                                                     |
+// | .next()          | Returns next element                               | ItrName.next()                                    | Return next element in HashSet (in collection of items/elements)                                           |
+// | .remove()        | Safely removes current element during iteration    | ItrName.remove()                                  | Remove the current element in HashSet (in Collection of items/elements)                                    |
+// |------------------|----------------------------------------------------|---------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -75,5 +76,9 @@ public class hashSet_basic {
         // Clear (Delete) all Elements in HashSet
         set.clear();
         System.out.println(set); // Should print []
+
+
+
+        sc.close();
     }
 }
