@@ -92,7 +92,7 @@ public class inbuilt_fun_Str {
     // Gives Substring from main string.
     // Format  "Sting_name.substring(beginIndex, endIndex);""
     public static void Substring(String name){
-        String subStr = name.substring(0,2);
+        String subStr = name.substring(2,0);
         System.out.println("Substring is :- " + subStr);
     }
 

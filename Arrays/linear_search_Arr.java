@@ -19,17 +19,23 @@ public class linear_search_Arr {
 
         Linear_search(Marks, x);
     }
+
+
+
     public static void printArray(int marks[]){
         System.out.println();
         System.out.print("Array of Marks is :- ");
-        for(int i = 0; i<marks.length; i++){
-            System.out.print(marks[i]+"  ");
+        for(int i = 1; i<=marks.length; i++){
+            System.out.print(marks[i-1]+"  ");
         }
     }
+
+
+
     public static void Linear_search(int marks[], int x){
         System.out.println("Finding......");
-        for(int i = 0; i<marks.length; i++){
-            if(marks[i] == x){
+        for(int i = 1; i<=marks.length; i++){
+            if(marks[i-1] == x){
                 System.out.println(x+" found at index "+i);
             }
         }
