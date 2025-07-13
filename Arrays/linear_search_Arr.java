@@ -16,7 +16,7 @@ public class linear_search_Arr {
         }
 
         printArray(Marks);
-
+        
         Linear_search(sc, Marks);
 
         sc.close();
