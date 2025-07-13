@@ -13,8 +13,10 @@ public class findFirstLastOccurance {
         int first = str.indexOf(element);
         int last = str.lastIndexOf(element);
 
-        
+
         System.out.println("First Occurance of character " + element + " is at index " + first);
         System.out.println("last Occurance of character " + element + " is at index " + last);
+
+        sc.close();
     }
 }
