@@ -1,0 +1,129 @@
+// ✅ MASTER TABLE: JAVA HASH COLLECTIONS — DETAILED PER COLLECTION AND METHOD
+// Table Format: Collection | Explanation | Declaration | Method / Return / Purpose
+
+
+
+|--------------------------|----------------------------------------------------------|---------------------------------------------------------------|--------------------------------------------------------|
+| Concept                  | Explanation                                              | Declaration                                                   | Return / Purpose                                       |
+|--------------------------|----------------------------------------------------------|---------------------------------------------------------------|--------------------------------------------------------|
+| ✅HashSet<E>            || Unordered unique elements                                | HashSet<E> set = new HashSet<>()                              |                                                        |
+| .add(e)                  | Adds element if not present                              | set.add(e)                                                    | Returns true if element added                          |
+| .remove(e)               | Removes specified element                                | set.remove(e)                                                 | Returns true if element existed and removed            |
+| .contains(e)             | Checks for element                                       | set.contains(e)                                               | Returns true if element exists                         |
+| .size()                  | Number of elements                                       | set.size()                                                    | Returns int                                            |
+| .clear()                 | Removes all elements                                     | set.clear()                                                   | Void                                                   |
+| .isEmpty()               | Checks if set is empty                                   | set.isEmpty()                                                 | Returns true if set is empty                           |
+| .iterator()              | Gets iterator                                            | set.iterator()                                                | Iterator<E>                                            |
+|--------------------------|----------------------------------------------------------|---------------------------------------------------------------|--------------------------------------------------------|
+
+
+
+|--------------------------|----------------------------------------------------------|---------------------------------------------------------------|--------------------------------------------------------|
+| Concept                  | Explanation                                              | Declaration                                                   | Return / Purpose                                       |
+|--------------------------|----------------------------------------------------------|---------------------------------------------------------------|--------------------------------------------------------|
+| ✅LinkedHashSet<E>      || HashSet + insertion order maintained                     | LinkedHashSet<E> set = new LinkedHashSet<>()                  |                                                        |
+| [same methods as HashSet]| Same methods as HashSet, preserves order                 |                                                               |                                                        |
+|--------------------------|----------------------------------------------------------|---------------------------------------------------------------|--------------------------------------------------------|
+
+
+
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
+| Concept               | Explanation                                              | Declaration                                                   | Return                                                   |
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
+| ✅HashMap<K, V>      || Unordered key-value store                                | HashMap<K, V> map = new HashMap<>()                           | Allows null keys/values, not thread-safe                 |
+| .put(k,v)             | Add/update entry                                         | map.put(key, value)                                           | Adds/updates and returns previous value (if any)         |
+| .get(k)               | Get value                                                | map.get(k)                                                    | Value or null                                            |
+| .remove(k)            | Remove entry                                             | map.remove(key)                                               | Removes the key and returns value                        |
+| .containsKey(k)       | Checks if key exists                                     | map.containsKey(key)                                          | Returns true/false                                       |
+| .keySet()             | All keys                                                 | map.keySet()                                                  | Set<K>                                                   |
+| .values()             | All values                                               | map.values()                                                  | Collection<V>                                            |
+| .entrySet()           | All key-value pairs                                      | map.entrySet()                                                | Set<Map.Entry<K,V>>                                      |
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
+
+
+
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
+| Concept               | Explanation                                              | Declaration                                                   | Return                                                   |
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
+| ✅LinkedHashMap      || Maintains insertion order                                | LinkedHashMap<K, V> map = new LinkedHashMap<>()               | Ordered by insertion                                     |
+| .get(k)               | Get value for key                                        | map.get(key)                                                  | Returns value for key                                    |
+| .remove(k)            | Remove key                                               | map.remove(key)                                               | Removes key-value pair                                   |
+| .clear()              | Clear all entries                                        | map.clear()                                                   | Empties the map                                          |
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
+
+
+
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
+| Concept               | Explanation                                              | Declaration                                                   | Return                                                   |
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
+| ✅Hashtable          || Thread-safe legacy map                                   | Hashtable<K, V> map = new Hashtable<>()                       | Synchronized; null keys/values not allowed               |
+| .put(k,v)             | Add entry                                                | map.put(k,v)                                                  | Adds entry                                               |
+| .get(k)               | get                                                      | map.get(k)                                                    | Get value                                                |
+| .containsKey(k)       | Check if key exists                                      | map.containsKey(k)                                            | true/false                                               |
+| .elements()           | Get all values                                           | map.elements()                                                | Enumeration<V>                                           |
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
+
+
+
+|----------------------------|----------------------------------------------------------|---------------------------------------------------------------|------------------------------------------------------|
+| Concept                    | Explanation                                              | Declaration                                                   | Return                                               |
+|----------------------------|----------------------------------------------------------|---------------------------------------------------------------|------------------------------------------------------|
+| ✅TreeMap<K, V>            | Sorted key-value pairs                                   | TreeMap<K, V> map = new TreeMap<>()                           | Keys are auto-sorted by natural/comparator order     |
+| .firstKey()                | Get smallest key                                         | map.firstKey()                                                | Returns first (lowest) key                           |
+| .lastKey()                 | Get largest key                                          | map.lastKey()                                                 | Returns last (highest) key                           |
+| .headMap(), .tailMap()     | Partial views                                            | map.headMap(k), map.tailMap(k)                                | SortedMap<K,V>                                       |
+|----------------------------|----------------------------------------------------------|---------------------------------------------------------------|------------------------------------------------------|
+
+
+
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------|
+| Concept               | Explanation                                              | Declaration                                                   | Return                                                    |
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------|
+| ✅TreeSet<E>          | Sorted set (no duplicates)                               | TreeSet<E> set = new TreeSet<>()                              | Automatically sorted set                                  | 
+| .first(), .last()     | First/last element                                       | set.first(), set.last()                                       | Smallest/largest element                                  |
+| .add(e), .remove(e)   | Add/remove element                                       | set.add(e), set.remove(e)                                     | Standard set operations                                   |
+| .subSet()             | Get range view                                           | set.subSet(start, end)                                        | Subset between values                                     |
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------|
+
+
+
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
+| Concept               | Explanation                                              | Declaration                                                   | Return                                                   |
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
+| ✅ConcurrentHashMap   | Thread-safe for concurrent threads                       | ConcurrentHashMap<K, V> map = new ConcurrentHashMap<>()       | No sync needed; supports parallel reads/writes           |
+| .putIfAbsent(k,v)     | Adds only if key not present                             | map.putIfAbsent(k,v)                                          | Adds entry only if key is absent                         |
+| .forEach()            | Iterate thread-safe / Thread-safe traversal              | map.forEach(...)                                              | Safely iterate / Iterate all pairs                       |
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
+
+
+
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
+| Concept               | Explanation                                              | Declaration                                                   | Return                                                   |
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
+| ✅WeakHashMap         | Automatically removes entry when key GC'd                | WeakHashMap<Object, V> map = new WeakHashMap<>()              | Keys are weakly referenced                               |
+| .put()                | Add weak key                                             | map.put(key, value)                                           | Acts like HashMap, but keys may be GC'd                  |
+| .get()                | access entries                                           | map.get(k)                                                    | Like HashMap, but keys GC’d                              |
+| GC + null key         | GC removes entry                                         | System.gc(), key=null                                         | After GC, removed                                        |
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
+
+
+
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
+| Concept               | Explanation                                              | Declaration                                                   | Return                                                   |
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
+| ✅EnumMap<Enum, V>    | Optimized map for enum keys                              | EnumMap<EnumType, V> map = new EnumMap<>(EnumType.class)      | High performance and type-safe for enums                 |
+| .put()                | Add enum key mapping                                     | map.put(EnumValue, value)                                     | Adds value for enum key                                  |
+| .get()                | get value for enum key                                   | map.get(EnumKey)                                              | Standard enum mapping                                    |
+| .keySet()             | All enum keys                                            | map.keySet()                                                  | Set<Enum>                                                |
+|-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
+
+
+
+|--------------------------|----------------------------------------------------------|---------------------------------------------------------------|--------------------------------------------------------|
+| Concept                  | Explanation                                              | Declaration                                                   | Return / Purpose                                       |
+|--------------------------|----------------------------------------------------------|---------------------------------------------------------------|--------------------------------------------------------|
+| ✅Iterator<E>            | Loops over any collection                                | Iterator<E> it = collection.iterator()                        | Use with Set/Map views                                 |       
+| .hasNext(), .next()      | Traverse elements                                        | it.hasNext(), it.next()                                       | Access elements one-by-one                             |
+| .remove()                | Remove current element safely                            | it.remove()                                                   | During iteration                                       |
+|--------------------------|----------------------------------------------------------|---------------------------------------------------------------|--------------------------------------------------------|
+
