@@ -1,3 +1,43 @@
+// ✅ HashMap in Java — Quick Theory (Key Points)
+//
+// - Stores key-value pairs (Map interface).
+// - Keys must be unique; values can be duplicate.
+// - No guaranteed order of elements.
+// - Allows one null key and multiple null values.
+// - Not thread-safe (use ConcurrentHashMap for threads).
+// - Provides O(1) average time for put/get operations.
+// - Backed by a hash table (internally uses hashing).
+// - Introduced in Java 1.2 (in java.util package).
+// - Supports advanced methods like merge(), putIfAbsent(), replace(), etc.
+
+/*
+|----------------------------|------------------------------------------------------------|---------------------------------------------------------------|------------------------------------------------------------|
+| Concept                    | Explanation                                                | Declaration                                                   | Return                                                     |
+|----------------------------|------------------------------------------------------------|---------------------------------------------------------------|------------------------------------------------------------|
+| ✅ HashMap<K, V>          | Unordered key-value store                                  | HashMap<K, V> map = new HashMap<>()                           | Allows null keys/values, not thread-safe                    |
+| .put(k,v)                  | Add/update entry                                           | map.put(key, value)                                           | Adds/updates, returns previous value or null               |
+| .get(k)                    | Get value for a key                                        | map.get(key)                                                  | Returns value or null                                      |
+| .remove(k)                 | Remove entry                                               | map.remove(key)                                               | Removes key, returns old value or null                     |
+| .containsKey(k)            | Checks if key exists                                       | map.containsKey(key)                                          | Returns true/false                                         |
+| .containsValue(v)          | Checks if value exists                                     | map.containsValue(value)                                      | Returns true/false                                         |
+| .isEmpty()                 | Checks if map is empty                                     | map.isEmpty()                                                 | Returns true if map is empty                               |
+| .size()                    | Number of entries                                          | map.size()                                                    | Returns int                                                |
+| .clear()                   | Removes all key-value pairs                                | map.clear()                                                   | Returns void                                               |
+| .keySet()                  | Gets set of all keys                                       | map.keySet()                                                  | Returns Set<K>                                             |
+| .values()                  | Gets collection of all values                              | map.values()                                                  | Returns Collection<V>                                      |
+| .entrySet()                | Gets set of key-value mappings                             | map.entrySet()                                                | Returns Set<Map.Entry<K, V>>                               |
+| .clone()                   | Creates shallow copy of map                                | HashMap<K, V> newMap = (HashMap<K,V>) map.clone();            | Returns Object (cast needed)                               |
+| .putAll(map2)              | Adds all mappings from map2 into current map               | map.putAll(map2)                                              | Copies entries, returns void                               |
+| .putIfAbsent(k, v)         | Puts key-value only if key not already present             | map.putIfAbsent("A", 0)                                       | Returns null if added, else existing value                 |
+| .replace(k, v)             | Replaces value for a key                                   | map.replace("A", 100)                                         | Returns previous value or null                             |
+| .merge(k, v, bifunc)       | Combines old & new values with logic (lambda/function)     | map.merge(k, v, (oldV,newV)->oldV+newV)                       | Adds, merges, modifies — returns final value               |
+| .equals(map2)              | Compares two maps (key-value-wise)                         | map.equals(map2)                                              | Returns true if equal (same keys + same values)            |
+|----------------------------|------------------------------------------------------------|---------------------------------------------------------------|------------------------------------------------------------|
+*/
+
+
+
+
 import java.util.HashMap;
 import java.util.Scanner;
 @SuppressWarnings("unchecked")
