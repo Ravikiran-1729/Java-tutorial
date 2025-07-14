@@ -1,7 +1,16 @@
 // ✅ MASTER TABLE: JAVA HASH COLLECTIONS — DETAILED PER COLLECTION AND METHOD
 // Table Format: Collection | Explanation | Declaration | Method / Return / Purpose
 
+// ✅ Java Hash Collections — Summary Theory (Concise & Point-wise)
 
+
+
+
+// 🔹 HashSet
+// - Backed internally by HashMap (only keys stored).
+// - Stores unique elements, no duplicates allowed.
+// - No specific order (unordered).
+// - Allows one null element.
 
 |--------------------------|----------------------------------------------------------|---------------------------------------------------------------|--------------------------------------------------------|
 | Concept                  | Explanation                                              | Declaration                                                   | Return / Purpose                                       |
@@ -18,6 +27,11 @@
 
 
 
+// 🔹 LinkedHashSet
+// - Extends HashSet with insertion order preserved.
+// - Allows one null element.
+// - Slightly slower than HashSet due to ordering overhead.
+
 |--------------------------|----------------------------------------------------------|---------------------------------------------------------------|--------------------------------------------------------|
 | Concept                  | Explanation                                              | Declaration                                                   | Return / Purpose                                       |
 |--------------------------|----------------------------------------------------------|---------------------------------------------------------------|--------------------------------------------------------|
@@ -26,6 +40,12 @@
 |--------------------------|----------------------------------------------------------|---------------------------------------------------------------|--------------------------------------------------------|
 
 
+// 🔹 HashMap
+// - Stores key-value pairs with unique keys.
+// - Allows one null key and multiple null values.
+// - No guaranteed order of entries.
+// - Not thread-safe; use ConcurrentHashMap if needed.
+// - Fast lookup & insert (O(1) average time).
 
 |-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
 | Concept               | Explanation                                              | Declaration                                                   | Return                                                   |
@@ -42,6 +62,12 @@
 
 
 
+// 🔹 LinkedHashMap
+// - Extends HashMap but maintains insertion order.
+// - Allows one null key, multiple null values.
+// - Useful when predictable iteration order is required.
+// - Slightly slower than HashMap due to ordering logic.
+
 |-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
 | Concept               | Explanation                                              | Declaration                                                   | Return                                                   |
 |-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
@@ -52,6 +78,12 @@
 |-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
 
 
+
+// 🔹 Hashtable
+// - Thread-safe version of HashMap (synchronized).
+// - No null keys or null values allowed.
+// - Slower due to synchronized methods.
+// - Considered legacy; prefer ConcurrentHashMap in modern apps.
 
 |-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
 | Concept               | Explanation                                              | Declaration                                                   | Return                                                   |
@@ -64,6 +96,11 @@
 |-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
 
 
+// 🔹 TreeMap
+// - Stores sorted key-value pairs (Red-Black Tree).
+// - Keys must implement Comparable or use Comparator.
+// - Does not allow null keys (null values are allowed).
+// - Slower than HashMap, but useful when sorted order is needed.
 
 |----------------------------|----------------------------------------------------------|---------------------------------------------------------------|------------------------------------------------------|
 | Concept                    | Explanation                                              | Declaration                                                   | Return                                               |
@@ -76,6 +113,12 @@
 
 
 
+// 🔹 TreeSet
+// - Stores sorted unique elements (based on TreeMap).
+// - Elements must be Comparable or use Comparator.
+// - Does not allow null elements.
+// - Useful for maintaining sorted sets.
+
 |-----------------------|----------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------|
 | Concept               | Explanation                                              | Declaration                                                   | Return                                                    |
 |-----------------------|----------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------|
@@ -87,6 +130,12 @@
 
 
 
+// 🔹 ConcurrentHashMap
+// - Thread-safe and high-performance map.
+// - Allows concurrent read/write without locking entire map.
+// - No null keys or null values allowed.
+// - Ideal for multithreaded environments.
+
 |-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
 | Concept               | Explanation                                              | Declaration                                                   | Return                                                   |
 |-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
@@ -96,6 +145,12 @@
 |-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
 
 
+
+// 🔹 WeakHashMap
+// - Keys are weakly referenced (eligible for GC).
+// - Automatically removes entries when keys are garbage collected.
+// - Used for caching, memory-sensitive maps.
+// - Not thread-safe.
 
 |-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
 | Concept               | Explanation                                              | Declaration                                                   | Return                                                   |
@@ -107,6 +162,12 @@
 |-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
 
 
+
+// 🔹 EnumMap
+// - Specialized map for enum keys only.
+// - Fastest Map for enums (uses internal array).
+// - Maintains natural order of enum constants.
+// - Does not allow null keys; values can be null.
 
 |-----------------------|----------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
 | Concept               | Explanation                                              | Declaration                                                   | Return                                                   |
