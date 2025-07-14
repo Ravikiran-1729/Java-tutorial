@@ -11,6 +11,8 @@ public class mobileBtns {
         String digitStr = sc.next();
 
         possibleCombinations(digitStr, 0, "");
+
+        sc.close();
     }
 
     public static void possibleCombinations(String dstr, int idx, String commbinations){
