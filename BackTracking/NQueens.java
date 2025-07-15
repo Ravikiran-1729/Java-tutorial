@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class NQueens {
 
     public static void saveboard(char board[][], List<List<String>> allBoards){
-        List<String> newlist = new ArrayList<>();
-
+        List<String> newlist = new ArrayList<>();   // Neccesary to store String to Nested ArrayList like  'List<List<String>>'
+                                                    // We have to  & update step wise i.e., => String ->  List<String>  -> List<List<String>>
         for(int i = 0; i<board.length; i++){
-            StringBuilder row = new StringBuilder();
+            StringBuilder row = new StringBuilder();      // Neccesary to store Characters in 'board' Array into List<String> 
             for(int j = 0; j<board[0].length; j++){
                 if(board[i][j]== 'Q'){
                     row.append("Q  ");
@@ -17,9 +17,9 @@ public class NQueens {
                     row.append("_  ");
                 }
             }
-            newlist.add(row.toString());
+            newlist.add(row.toString());                 // Have to convert StringBuilder to String
         }
-        allBoards.add(newlist);
+        allBoards.add(newlist);                          // Storing List<String>  -> List<List<String>>
 
         
     }
@@ -91,7 +91,7 @@ public class NQueens {
 
     public static void helper(List<List<String>> allBoards, char board[][], int col){
         if(col == board.length){
-            saveboard(board, allBoards);
+            saveboard(board, allBoards);   
             return;
         }
 
@@ -99,7 +99,7 @@ public class NQueens {
             if(isSafe(row, col, board)){
                 board[row][col] = 'Q';
                 helper(allBoards, board, col+1);
-                board[row][col] = '_';
+                board[row][col] = '_';          // "#_BACKTRACKING_" (IF ABOVE RECURSION WILL UNABLE TO STORE Q IN ALL COLUMN THEN INITIALLY STORED 'Q' AT [0][0] WILL BE UPDATED WITH '_', ELSE BASE CONDITION WILL REACH AND HELPER FUNCTION GET RETURNED WITHOUT COMING TO THIS STATEMENT, i.e., THIS UPDATATION  STATEMENT WILL NOT BE EXECUTED)
             }
         }
     }
@@ -116,6 +116,10 @@ public class NQueens {
 
         helper(allBoards, board, 0);
 
+
+        // WAYS TO ACCESS NESTED ARRAYLIST USING LOOPS.
+        // WAY#1
+
         // int i = 0;
         // while(allBoards.size()>i){
         //     int j = 0;
@@ -128,6 +132,7 @@ public class NQueens {
         // }
 
 
+        // WAY#2
         int i = 1;
         for(List<String> newboard : allBoards){
             System.out.println("Solution #"+i++);
@@ -137,7 +142,10 @@ public class NQueens {
             System.out.println();
         }
 
+
+        // ALL WAYS TO PLACE N QUEENS ON N x N CHESSBOARD
         System.out.println("There are " + allBoards.size() + " valid ways to place " + n + " queens on a " + n + " X " + n + " chessboard.");
+
 
         sc.close();
     }
