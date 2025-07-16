@@ -14,7 +14,9 @@ public class allPossibleSubset {
         
         createSubset(n, 0, "");
 
+        System.out.println("All Possible Subsets are :- "+subsets.size());
         System.out.println(subsets);
+        sc.close();
 
     }
 
