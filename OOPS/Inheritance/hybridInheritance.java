@@ -16,7 +16,14 @@ class Circle extends Shape{
     }
 }
 
-public class runTimePolymorphism {
+class EquilateralTriangle extends Triangle{
+    public void area(int side){
+        System.out.println("Area : "+(3/4)*side*side);
+    }
+}
+
+
+public class hybridInheritance {
     public static void main(String[] args) {
         Triangle t1 = new Triangle();
         t1.area();
@@ -25,5 +32,9 @@ public class runTimePolymorphism {
         Circle c1 = new Circle();
         c1.area();
         c1.area(7);
+
+        EquilateralTriangle e1 = new EquilateralTriangle();
+        e1.area();
+        e1.area(7);
     }
 }

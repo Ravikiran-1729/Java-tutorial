@@ -16,7 +16,7 @@ class Circle extends Shape{
     }
 }
 
-public class runTimePolymorphism {
+public class hierarchicalInheritance {
     public static void main(String[] args) {
         Triangle t1 = new Triangle();
         t1.area();

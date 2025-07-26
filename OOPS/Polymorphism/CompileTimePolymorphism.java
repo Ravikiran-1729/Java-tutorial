@@ -1,5 +1,3 @@
-package OOPS.Polymorphism;
-
 class Student{
     String name;
     int age;
