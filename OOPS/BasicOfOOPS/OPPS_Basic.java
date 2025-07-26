@@ -1,5 +1,3 @@
-
-
 // Class Defination
 class Student{
     //Properties of class (or Data)
