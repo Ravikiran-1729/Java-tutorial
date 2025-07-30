@@ -60,7 +60,7 @@ public class reverse_List_Iteration{
 
 
     public static void main(String[] args) {
-        temp list = new temp();
+        reverse_List_Iteration list = new reverse_List_Iteration();
         list.addfirst(4);
         list.addfirst(3);
         list.addfirst(2);

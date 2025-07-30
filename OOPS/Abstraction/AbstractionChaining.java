@@ -24,7 +24,7 @@ public class AbstractionChaining{
     public static void main(String[] args) {
         Horse h1 = new Horse();
 
-
+        h1.eat();
 
         /*Here Above you just created h1 Object using Horse() Constructor 
         But as you can See we have one parent class - Animal which is Abstract class
