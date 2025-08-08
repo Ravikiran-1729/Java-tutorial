@@ -1,3 +1,4 @@
+// ) Return indices of two elements that sum to a target (any one valid pair).
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -45,6 +46,4 @@ public class sumTarget {
         }
         return new ArrayList<>();
     }
-
-
 }

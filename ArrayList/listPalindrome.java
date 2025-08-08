@@ -1,3 +1,5 @@
+//Check if an ArrayList forms a palindrome.
+
 import java.util.ArrayList;
 import java.util.Arrays;
 

@@ -1,3 +1,5 @@
+// Remove all occurrences of a given value from an ArrayList while preserving order; return the new size.
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

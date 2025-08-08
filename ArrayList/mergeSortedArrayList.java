@@ -1,3 +1,5 @@
+// Merge two sorted ArrayLists into one sorted ArrayList.
+
 import java.util.ArrayList;
 import java.util.Arrays;
 

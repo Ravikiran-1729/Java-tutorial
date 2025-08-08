@@ -1,3 +1,5 @@
+// Find the second largest distinct element in an ArrayList (or report none).
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

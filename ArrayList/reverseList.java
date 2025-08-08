@@ -1,3 +1,5 @@
+// Reverse an ArrayList in place without using library helpers.
+
 import java.util.ArrayList;
 
 public class reverseList {

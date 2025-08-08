@@ -1,3 +1,5 @@
+// Rotate an ArrayList to the right by k positions in place.
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;

@@ -1,3 +1,5 @@
+// Find the minimum and maximum values in a single pass.
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
