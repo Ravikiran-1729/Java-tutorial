@@ -1,4 +1,4 @@
-// Count subarrays with sum exactly k (array may contain negative numbers).
+// Count subarrays with sum exactly k (array may contain negative numbers.
 
 import java.util.ArrayList;
 import java.util.Arrays;
