@@ -1,4 +1,4 @@
-// Find the length of the longest subarray with sum ≤ k (non-negative integers).
+// Find the minimal length of a subarray with sum ≥ target (positive integers).
 
 import java.util.ArrayList;
 import java.util.Arrays;
