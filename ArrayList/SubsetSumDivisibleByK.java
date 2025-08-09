@@ -1,3 +1,4 @@
+// Count the number of subarrays whose sum is divisible by k.
 import java.util.ArrayList;
 
 public class SubsetSumDivisibleByK {

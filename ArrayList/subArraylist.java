@@ -1,4 +1,4 @@
-// Count the number of subarrays whose sum is divisible by k.
+// Find all subarrays of the arraylist
 
 import java.util.ArrayList;
 import java.util.Arrays;
