@@ -1,7 +1,8 @@
+// Count the number of subarrays whose sum is divisible by k.
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class subsetsOfArrayList {
+public class subsetsOfArrayList_DivisibleBYk {
     public static ArrayList<ArrayList<Integer>> subLists = new ArrayList<>();
     public static ArrayList<ArrayList<Integer>> SublistsDivisibleByK = new ArrayList<>();
     public static void main(String[] args) {
@@ -13,7 +14,7 @@ public class subsetsOfArrayList {
         System.out.println("All Possible SubArraylists are :- "+subLists.size());
         System.out.println(subLists);
 
-        int k = 5;
+        int k = 9;
         int count = findSublistsDivisibleByK(k);
 
         System.out.println("\nNumber of subArrays whose sum is divisible by " + k + " are :- " + count);
