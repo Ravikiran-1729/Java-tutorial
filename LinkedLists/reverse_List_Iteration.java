@@ -43,6 +43,17 @@ public class reverse_List_Iteration{
         head = prevNode;
     }
 
+    public Node reverse_recursively(Node head){
+        if(head == null || head.next == null){
+            return head;
+        }
+        Node newNode = reverse_recursively(head.next);
+        head.next.next = head;
+        head.next = null;
+
+        return newNode;
+    }
+
 
 
     public void printList(){
@@ -68,7 +79,7 @@ public class reverse_List_Iteration{
         list.printList();
         list.reverseIterate();
         list.printList();
-        list.reverseIterate();
+        list.head = list.reverse_recursively(list.head);
         list.printList();
     }  
 }
