@@ -1,7 +1,7 @@
 abstract class Animal {
     abstract void walk();
 
-    void breathe() {
+    public void breathe() {
         System.out.println("This animal breathes air");
     }
 
