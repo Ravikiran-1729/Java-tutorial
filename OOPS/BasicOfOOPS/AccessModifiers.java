@@ -1,8 +1,18 @@
 class Account {
+    
+    // Accessible -> Everywhere
     public String name;
+
+    // Accessible -> Outside of Package (Subclass) by inheritance + within Package + class
     protected String email;
+
+    // Accessible -> Within Package + class
+    int phone;
+
+    // Accessible -> Only within class
     private String password;
 
+    // Getter & Setter methods for private attributes
     public void setPassword(String password) {
         this.password = password;
     }
