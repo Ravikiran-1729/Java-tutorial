@@ -5,7 +5,7 @@ class OuterClass{
 
     // Static inner class
     // 1. Does NOT need an instance of OuterClass.
-    // 2. Can have MULTIPLE independent instances, just like any normal class.
+    // 2. Can have MULTIPLE independent instances(Object), just like any normal class.
     static class InnerClass{
         String city ;
 
