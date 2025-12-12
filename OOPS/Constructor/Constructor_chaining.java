@@ -46,5 +46,7 @@ public class Constructor_chaining {
         Car c3 = new Car("Leader Edition", 2025);
 
         c1.display();
+        c2.display();
+        c3.display();
     }
 }
