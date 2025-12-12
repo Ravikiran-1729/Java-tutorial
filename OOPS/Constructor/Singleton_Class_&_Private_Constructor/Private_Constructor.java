@@ -3,7 +3,7 @@ class  Utility {
 
     private Utility(){}
 
-    // Private Constructor class doesn't have Instace attributes & methods.
+    // Private Constructor class doesn't have Instance attributes & methods.
     // All Method & attributes must be static
     public static int add(int a, int b) {return a + b;}
     public static int subtract(int a, int b) {return a - b;}
