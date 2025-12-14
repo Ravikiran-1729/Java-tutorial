@@ -24,6 +24,7 @@ interface Animal {
 class Horse implements Animal {
 
    // Implementing the abstract method of interface
+   // public is mandetory while overriding Or Error : Cannot Reduce the visibility of walk method from public to default
    @Override
    public void walk() {
       System.out.println("Horse walks on 4 legs");
@@ -34,6 +35,7 @@ class Horse implements Animal {
 class Chicken implements Animal {
 
    // Implementing the abstract method of interface
+   // public is mandetory while overriding Or Error : Cannot Reduce the visibility of walk method from public to default
    @Override
    public void walk() {
       System.out.println("Chicken walks on 2 legs");
