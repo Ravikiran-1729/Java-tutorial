@@ -39,6 +39,7 @@ public class AbstractionChaining{
 
         Your are creating Animal
         You are creating Horse
+        Animal can Eat
 
         
          */
