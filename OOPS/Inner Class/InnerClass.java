@@ -14,7 +14,7 @@ class A {
 
         // Method of inner class
         void showInner(){
-            System.out.println("This is inner class method");
+            System.out.println("This is inner class method; x = "+x+"; y = "+y);
         }
     }
 
