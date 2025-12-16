@@ -1,7 +1,7 @@
 
 public class MaxSum_Subarray {
 
-    public static void SubArray(int arr[], int size){
+    public static int SubArray(int arr[], int size){
         int j = 0;
         int max = Integer.MIN_VALUE;
         while (j != size) {
@@ -11,14 +11,16 @@ public class MaxSum_Subarray {
                     sum += arr[s];
                 }
                 if(sum > max){
-                    sum = max;
+                    max = sum;
                 }
             }
             j++;
         }
+        return max;
     }
     public static void main(String[] args) {
-        int arr[] = {1,2,3,4,5,6,7,8,9};
-        SubArray(arr, arr.length);
+        int arr[] = {1,-2,3,-4,5,6,7,8,-9};
+        int max = SubArray(arr, arr.length);
+        System.out.println(max);
     }
 }
