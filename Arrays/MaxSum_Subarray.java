@@ -5,9 +5,11 @@ public class MaxSum_Subarray {
         int j = 0;
         int max = Integer.MIN_VALUE;
         while (j != size) {
-            for(int i = j+1; i<=size; i++){
+            int start = j;
+            for(int i = j; i<size; i++){
+                int end = i;
                 int sum = 0;
-                for(int s = j; s<i; s++){
+                for(int s = start; s<=end; s++){
                     sum += arr[s];
                 }
                 if(sum > max){

@@ -3,10 +3,12 @@ public class Subarray {
     public static void SubArray(int arr[], int size){
         int j = 0;
         while (j != size) {
-            for(int i = j+1; i<=size; i++){
+            int start = j;
+            for(int i = j; i<size; i++){
+                int end = i;
                 System.out.print("(");
-                for(int s = j; s<i; s++){
-                    if(s!=i-1){
+                for(int s = start; s<=end; s++){
+                    if(s!=end){
                         System.out.print(arr[s]+", ");
                     }else{
                         System.out.print(arr[s]);
