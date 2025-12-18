@@ -85,7 +85,8 @@ public class TrappedRainWater {
     public static void main(String[] args) {
 
         // Sample test case
-        int arr[] = {1, 5, 3, 2, 0, 1, 2};
+        // int arr[] = {1, 5, 3, 2, 0, 1, 2};
+        int arr[] = {0, 1, 0,  2, 1, 0, 1, 3, 2, 1, 2, 1};
 
         // Using prefix max arrays
         int a = trappedWater(arr, arr.length);
