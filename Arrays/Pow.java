@@ -16,7 +16,7 @@ public class Pow {
             // Because -Integer.MIN_VALUE causes overflow
             // x^(-2^31) = 1 / (x * x^(2^31 - 1))
             if(n == Integer.MIN_VALUE){
-                return 1 / (x * pow(x, -n + 1));
+                return 1 / (x * pow(x, -(n + 1)));
             }
 
             // General negative power case
@@ -40,7 +40,7 @@ public class Pow {
     public static void main(String[] args) {
 
         // Test cases
-        System.out.println(pow(3, 0));   // 1
+        System.out.println(pow(-2147483648, 2));   // 4.611686018427388E18
         System.out.println(pow(3, 3));   // 27
         System.out.println(pow(3, -3));  // 0.037037...
     }
