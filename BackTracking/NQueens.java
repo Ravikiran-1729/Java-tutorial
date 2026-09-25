@@ -33,7 +33,7 @@ public class NQueens {
             }
         }
         
-        // // NO NEED TO CHECK THE SAME ROW TO THE RIGHT BECAUSE WE PLACING QUEENS FROM LEFT -> RIGHT
+        // // NO NEED TO CHECK THE SAME ROW TO THE RIGHT BECAUSE WE  PLACING QUEENS FROM LEFT -> RIGHT
 
         // // Check horizontal row
         // for(int j = 0; j<board.length; j++){

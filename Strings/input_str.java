@@ -14,6 +14,10 @@ public class input_str{
         
         String name = sc.nextLine();
         System.out.println("Your name is "+name);
+
+        String str = "abcde";
+
+        System.out.println(str.replace('a', 'A'));
         
         sc.close();
     }
