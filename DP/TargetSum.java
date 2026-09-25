@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 public class TargetSum {
 
     /**
@@ -14,7 +13,7 @@ public class TargetSum {
      * @param target required subset sum
      * @return total number of subsets whose sum equals target
      */
-    private int targetSum(int[] nums, int target) {
+    public int targetSum(int[] nums, int target) {
         int[] dp = new int[target + 1];
 
         // 1 way to make sum 0: the empty set
